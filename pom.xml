@@ -114,8 +114,8 @@
                                         <argument>--max_old_space_size=3048</argument>
                                         <argument>./node_modules/.bin/ng</argument>
                                         <argument>build</argument>
-                                        <argument>-|-prod</argument>
-                                        <argument>-|-base-href</argument>
+                                        <argument>--prod</argument>
+                                        <argument>--base-href</argument>
                                         <argument>/</argument>
                                     </arguments>
 <!--                                    <executable>ng</executable>-->
