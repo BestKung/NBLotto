@@ -1,25 +1,32 @@
 <mat-toolbar class="nb-toolbar">
   <mat-toolbar-row>
-    <span>NB-Lotto</span>
+    <span>NB Lotto</span>
     <span class="example-spacer"></span>
-<!--    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">-->
-<!--      <mat-icon>menu</mat-icon>-->
-<!--    </button>-->
+    <!--    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">-->
+    <!--      <mat-icon>menu</mat-icon>-->
+    <!--    </button>-->
     <label mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
       <mat-icon>more_vert</mat-icon>
     </label>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
+      <button mat-menu-item [routerLink]="'/analyze'" routerLinkActive="active">
+        <mat-icon>search</mat-icon>
+        <span>วิเคราะห์</span>
       </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span>Check voice mail</span>
+      <button mat-menu-item [routerLink]="'/lotto-his'" routerLinkActive="active">
+        <mat-icon>description</mat-icon>
+        <span>ผลการออกย้อนหลัง</span>
       </button>
-      <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span>Disable alerts</span>
+      <button mat-menu-item [routerLink]="'/webboard'" routerLinkActive="active">
+        <mat-icon>groups</mat-icon>
+        <span>พูดคุย</span>
       </button>
-    </mat-menu>  </mat-toolbar-row>
+      <button mat-menu-item [routerLink]="'/login'" routerLinkActive="active">
+        <mat-icon>login</mat-icon>
+        <span>เข้าสู่ระบบ</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
 </mat-toolbar>
+<router-outlet></router-outlet>
+
