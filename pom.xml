@@ -112,19 +112,19 @@
                                     <executable>node</executable>
                                     <arguments>
                                         <argument>--max_old_space_size=3048</argument>
-                                        <!--<argument>./node_modules/.bin/ng</argument>-->
-                                        <!--<argument>build</argument>-->
-                                        <!--<argument>-|-prod</argument>-->
-                                        <!--<argument>-|-base-href</argument>-->
-                                        <!--<argument>/</argument>-->
-                                    </arguments>
-                                    <executable>ng</executable>
-                                    <arguments>
+                                        <argument>./node_modules/.bin/ng</argument>
                                         <argument>build</argument>
-                                        <argument>--prod</argument>
-                                        <argument>--base-href</argument>
+                                        <argument>-|-prod</argument>
+                                        <argument>-|-base-href</argument>
                                         <argument>/</argument>
                                     </arguments>
+<!--                                    <executable>ng</executable>-->
+<!--                                    <arguments>-->
+<!--                                        <argument>build</argument>-->
+<!--                                        <argument>&#45;&#45;prod</argument>-->
+<!--                                        <argument>&#45;&#45;base-href</argument>-->
+<!--                                        <argument>/</argument>-->
+<!--                                    </arguments>-->
                                     <workingDirectory>${project.basedir}/src/main/web</workingDirectory>
                                 </configuration>
                             </execution>
